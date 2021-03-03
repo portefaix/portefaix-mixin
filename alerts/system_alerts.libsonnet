@@ -15,7 +15,7 @@
 {
   prometheusAlerts+:: {
     groups+: [{
-      name: 'minotor',
+      name: 'portefaix',
       rules: [
         {
           alert: 'NodeRebootted',
