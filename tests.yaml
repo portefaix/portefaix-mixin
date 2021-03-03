@@ -1,0 +1,19 @@
+---
+rule_files:
+- manifests/prometheus_alerts.yaml
+- manifests/prometheus_rules.yaml
+
+evaluation_interval: 1m
+
+tests:
+# System metrics
+# - interval: 1m
+#   input_series:
+#   alert_rule_test:
+#   - eval_time: 30m
+#     alertname: node_rebootted
+#     exp_alerts:
+#     - exp_labels:
+#         severity: warning
+#       exp_annotations:
+#         message:

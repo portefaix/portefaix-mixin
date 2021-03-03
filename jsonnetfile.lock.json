@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "dependencies": [
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/grafana/grafonnet-lib.git",
+          "subdir": "grafonnet"
+        }
+      },
+      "version": "b0d72d6ed0e9fcab83fc2dd954b3bd57113e768c",
+      "sum": "g2UC37YmOShdIFThAO99Uw89UO+H3sHt+y0ionv9/sA="
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/grafana/jsonnet-libs.git",
+          "subdir": "grafana-builder"
+        }
+      },
+      "version": "e03ce6c81f2dc4b147d138737e7cced476c966cd",
+      "sum": "EmHrmBY8PbnV0BKXmVWvAEmax6eglRinKSyZbTmVWuc="
+    }
+  ],
+  "legacyImports": false
+}
