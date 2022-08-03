@@ -20,18 +20,17 @@
     // Severity level for NodeRebootted alert
     nodeRebootedSeverity: 'warning',
 
-    // Grafana dashboard IDs are necessary for stable links for dashboards
-    grafanaDashboardIDs: {
-      'cluster-cost.json': 'ieyahc4arahsieweequah8ughaixohchath8waeGh',
-    },
-
-    // // Config for the Grafana dashboards in the Mixin
+    // Config for the Grafana dashboards in the Mixin
     grafanaK8s: {
-      prefix: 'Portefaix / ',
-      tags: ['portefaix-mixin'],
+      // Grafana tags
+      tags: ['portefaix-mixin-v0.2.0'],
 
-      // The default refresh time for all dashboards, default to 10s
+      // Timezone for Grafana dashboards:: UTC, browser, ...
+      grafanaTimezone: 'UTC',
+
+      // The default refresh time for all dashboards, default to 30s
       refresh: '60s',
+
       // minimumTimeInterval: '1m',
     },
 
