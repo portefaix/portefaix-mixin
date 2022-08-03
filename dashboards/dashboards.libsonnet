@@ -13,5 +13,4 @@
 // limitations under the License.
 
 (import 'k8s-cluster-overview.libsonnet') +
-(import 'k8s-test.libsonnet') +
 (import 'defaults.libsonnet')

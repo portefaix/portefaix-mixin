@@ -20,7 +20,9 @@
   grafanaDashboards:: {
     [filename]: grafanaDashboards[filename] {
       uid: std.md5(filename),
-      timezone: 'UTC',
+      timezone: $._config.grafanaK8s.grafanaTimezone,
+      tags: ($._config.grafanaK8s.tags),
+      refresh: $._config.grafanaK8s.refresh,
     }
     for filename in std.objectFields(grafanaDashboards)
   },
