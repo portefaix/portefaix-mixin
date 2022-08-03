@@ -25,6 +25,10 @@ repos:
       - '--allow-multiple-documents'
       exclude: mkdocs.yml
     - id: check-added-large-files
+- repo: https://github.com/waisbrot/pre-commit-jsonnet.git
+  rev: v1.0
+  hooks:
+    - id: jsonnetfmt
 - repo: https://github.com/Lucas-C/pre-commit-hooks
   rev: v1.1.10
   hooks:
@@ -34,7 +38,3 @@ repos:
       - --license-filepath
       - hack/config/licence.txt
       # - --remove-header
-- repo: https://github.com/waisbrot/pre-commit-jsonnet.git
-  rev: v1.0
-  hooks:
-    - id: jsonnetfmt
