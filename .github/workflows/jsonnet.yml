@@ -33,4 +33,4 @@ jobs:
       - uses: kobtea/setup-jsonnet-action@v1
       - run: |
           jb install
-          find . -type f | xargs -IFILE bash -c "jsonnetfmt FILE | diff -u FILE -"
+          find . -name "*.libsonnet" | xargs -IFILE bash -c "jsonnetfmt FILE | diff -u FILE -"
