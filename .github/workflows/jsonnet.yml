@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: kobtea/setup-jsonnet-action@v1
+      - uses: kobtea/setup-jsonnet-action@v2
       - run: |
           jb install
           find . -name "*.libsonnet" | xargs -IFILE bash -c "jsonnetfmt FILE | diff -u FILE -"
